@@ -2,17 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset=”UTF-8”>
+    <title>Roblox my love</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
   <style>
             body{
                 background-color: rgb(255, 201, 239); 
-                
-                color:rgb(255, 110, 190)
+                color:rgb(255, 110, 190);
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
             }
-            head{
-                Text-align: center;
-            }
-            h1{
+
+            h1, h2, h3{
                 Text-align: center;
             }
              .roblox_photo{
@@ -22,31 +28,39 @@
                 width: 70%px;  
             }
 
+            /* Grid Layout */
+            #content-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            /* Sections */
+            #content-wrapper > div {
+                background: white;
+                padding: 20px;
+                border-radius: 12px;
+                border: 2px solid rgb(255, 110, 190);
+            }
         </style>
-    
-    <head>
-        <title>Roblox my love</title>
-        <meta charset=”UTF-8”>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
     </head>
     
     
+
     <body>
         <div id="content-wrapper">
         <div id="is">
         <h1>Roblox</h1>
           
             <img class="roblox_photo" src="https://www.softwareacademy.co.uk/wp-content/uploads/2023/11/Hero_Roblox_HC_S.jpg"alt="Roblox image"/> 
-            <img class="robloc_image" src="https://static.qustodio.com/public-site/uploads/2021/05/10080853/2024-06-Blog_Is-Roblox-Safe-for-kids_Hero.png" alt="Roblox image"/> 
+            <img class="roblox_image" src="https://static.qustodio.com/public-site/uploads/2021/05/10080853/2024-06-Blog_Is-Roblox-Safe-for-kids_Hero.png" alt="Roblox image"/> 
         </div>
         
         <div id="why">
 
-        .container {
-        flex-direction: row | row-reverse | column | column-reverse;
         <h2>What Roblox is</h2>
-        }
+        
 
         <p>Roblox is a type of game. It's an online platform and game creation system. It is a user based system where users can create their own games. As well as play other games created by themselves or others. It's a massive online universe where you can talk and interact with people all around the world.</p>
         
