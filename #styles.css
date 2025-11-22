@@ -16,4 +16,12 @@ img{
 #content-wrapper{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+#is, #why, #reasons {
+    padding: 20px;
+    margin: 20px;
+    width: 100%; 
+
 }
