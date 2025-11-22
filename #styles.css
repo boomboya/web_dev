@@ -1,0 +1,19 @@
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: normal;
+    margin: 5px
+
+}
+   
+
+img{
+    padding: 20px;
+    margin: 50px;
+    width:150px;
+}
+
+#content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
