@@ -1,79 +1,33 @@
-#content-wrapper {
-    /* * FLEXBOX: Used to arrange all child sections (`is`, `why`, `reasons`)
-     * in a column and center them horizontally. 
-     */
-    display: flex;
-    flex-direction: column; /* Stack the sections vertically */
-    align-items: center; /* Center the sections horizontally */
-    
-    width: 90%; /* Max width of the content area */
-    max-width: 1000px; /* Limit the width on very large screens */
-    margin: 40px auto; /* Add margin above/below and center the block */
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: normal;
+    margin: 5px
+
+}
+   
+
+img{
     padding: 20px;
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    width:150px;
 }
 
-/* Style for individual content sections */
+#content-wrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
 #is, #why, #reasons {
     padding: 20px;
-    margin-bottom: 20px; /* Space out the sections */
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
-    border-radius: 8px;
-    width: 100%; /* Make each section take the full width of the wrapper */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 20px;
+    width: 100%; 
+
 }
 
-/* --- Typography and Element Styling --- */
-
-h1, h2, h3 {
-    text-align: center;
-    color: rgb(200, 50, 150); /* A darker pink for headings */
-    border-bottom: 2px dashed var(--primary-color);
-    padding-bottom: 10px;
-}
-
-/* Special styling for the image container area */
-.image-gallery {
-    /* FLEXBOX: Used to align the images */
+#img-wrapper{
     display: flex;
-    justify-content: space-around; /* Distribute space evenly around the images */
-    align-items: flex-end; /* Align items to the bottom */
-    margin-bottom: 20px;
-}
-
-/* Adjust the image styles from the HTML style block */
-.roblox_photo {
-    width: 100px; /* A bit larger */
-    height: 100px;
-    object-fit: cover; /* Crop and cover the area without distorting */
-    border-radius: 50%; /* Make it round! */
-    border: 3px solid var(--primary-color);
-}
-
-.roblox_image {
-    width: 70%;  
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-ol {
-    list-style-position: inside;
-}
-
-/* Style the link */
-a {
-    color: rgb(0, 150, 255); /* Blue link */
-    font-weight: bold;
-    text-decoration: none; /* Remove underline */
-    display: block; /* Make the link take up its own line */
-    text-align: center;
-    margin-top: 20px;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: rgb(255, 50, 150); /* Pink on hover */
+    flex-wrap: wrap;
+    align-items: center;
 }
