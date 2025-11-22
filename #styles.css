@@ -25,3 +25,9 @@ img{
     width: 100%; 
 
 }
+
+#img-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
