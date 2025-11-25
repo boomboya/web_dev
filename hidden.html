@@ -1,11 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="hide.css">
+    <script>
+        showing="none"
+        function show(){
+
+            if(showing=="none"){
+            document.getElementById("hidden").style.display="block"
+            showing = "block"
+            document.getElemenetById("button").innerHTML = "show less"
+        }else{
+            document.getElementById("hidden").style.display="none"
+            showing = "none"
+        }
+       
+    }
+</script>
 </head>
 <body>
+    <h1 onmouseover= {show()}> Dutch Bros</h1>
+   
+    <div id="content-wrapper">
+    <div id="left">
+    <div id="hidden">
+    <img id= "hidden" src="https://dyn.mktgcdn.com/p/S17TZtMLfNNBsXrYGqWHQc4ilM-TLGUARodcL2iHKgE/width=795,height=564"alt="Roblox image"/>
+    </div> 
+   
     
+    <p>Dutch bros is a coffee shop. It was founded in oregon in 1992. it has a large variety o fdrinks from coffee to rebels and forzen ones. </p>
+
+    <p>I love dutch bros very much. There is one by my house and it taste very good. I go there all the time with my brother and its so fun. I recomend their frozen ones they are so good.</p>
+
+     <ol>
+            <li>Drinks are very yum</li>
+            <li>get a lot for the price</li>
+            <li>lots of drink variety</li>
+        </ol>
+    
+     <img src="https://mms.businesswire.com/media/20250326683162/en/1854527/22/Dutch_Bros%2C_Inc.jpg"alt="Dutch bros logo"/>
+
+    </div>
+    </div>
 </body>
 </html>
