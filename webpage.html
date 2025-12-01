@@ -56,6 +56,11 @@
                 height: 80%; 
                 border-radius:15px
             }
+
+            #hidden {
+                display: none;
+                margin-top: 20px;
+            }
         </style>
     </head>
     
@@ -102,7 +107,32 @@
 
                 <a href="https://www.roblox.com/" target="_blank">Roblox link to play</a>
             </div>
+
+            <div class = "reasons">
+                <button onclick="toggleExtra()" style="padding:10px 20px; font-size:18px; border-radius:10px;">
+                    Show more
+                </button>
+                
+                <div id="hidden">
+                    <P>Roblox has been around for many years as it originated in 2006. It has become very popular nowadays with all ages. One reason it has became popular was because of social media. People started youtube channels and tiktoks and would post videos of them playing roblox. Those videos blew up mainly in 2020 and made roblox way more popular.</P>
+                    <img src="2wCEAAkGBxMTEhUTExMWFhUXGR4YGBgYGB4gGxseHR0eGB0dHhsaICggHx0lIR0YITEiJSkrLi4uHyIzODMtNygtLisBCgoKDg0OGxAQGy0mICUtLS0tLS8tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf">
+                </div>
+            </div>
         </div>
+    <script>
+        function toggleExtra(){
+            const section = document.getElementById("hidden");
+            const button = event.target;
+
+            if(section.style.display==="none"){
+                section.style.display = "block";
+                button.textContent = "Hide";
+            }else{
+                section.style.display ="none";
+                button.textContent="Show more";
+            }
+        }
+    </script>
     </body>
     
     </html>
