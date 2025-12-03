@@ -10,7 +10,7 @@ def home():
 
 @app.route("/contact")
 def contact():
-    return "<p> ggfauydhkf</p>"
+    return render_template("contact.html")
 
 @app.route("/<name>")
 def user(name):
@@ -24,13 +24,13 @@ if __name__== "__main__":
     #jl flask notes 7th
 
 #What does Flask do?
-    #allows us to have multipgae websites
+    #allows us to have multipgae websites that is imported from python
 
 #What are the steps to setting up a Flask project?
-    #
+    #we have routes to show different pages based on adding different info to the routes
 
 #How can you reference subpages on your Flask project? (Meaning the difference between the home page and a personal profile)
-    #
+    #you change the url
 
 #What are templates?
-    #
+    #a cookie cutter to make multiple pages with the same stuff
