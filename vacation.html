@@ -21,6 +21,7 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 margin-top: 20px;
+                font-size: larger;
             }
 
             #content-wrapper > div {
@@ -49,8 +50,8 @@
                 border-radius: 12px;
                 margin: 15px;
             }
-             .roblox_image{
-                height: 80px;
+             #images{
+                
                 border-radius: 12px;
                 margin: 15px;
 
@@ -58,8 +59,16 @@
 
             
             #hidden {
+                border-radius: 12px;
+                font-family: Arial, sans-serif;
                 display: none;
                 margin-top: 20px;
+                color:rgb(108, 159, 192);
+                background:rgb(255, 255, 255);
+                padding: 20px;
+                border: 2px solid rgb(63, 72, 155);
+                font-size: larger;
+
             }
         </style>
     </head>
@@ -106,7 +115,7 @@
                 </ol>
 
             </div>
-
+        </div>
             <div class = "reasons">
                 <button onclick="toggleExtra()" style="padding:10px 20px; font-size:18px; border-radius:10px;">
                     Show more
@@ -117,7 +126,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKqZ08KMspsPQbTvLyWPIsnWZXi5LVtb-OGQ&s">
                 </div>
             </div>
-        </div>
+        
     <script>
         function toggleExtra(){
             const section = document.getElementById("hidden");
